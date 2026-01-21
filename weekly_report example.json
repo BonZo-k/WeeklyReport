@@ -1,0 +1,26 @@
+{
+    "report_period": {
+        "from": "2026-01-14",
+        "to": "2026-01-21"
+    },
+    "metrics": {
+        "new_requests_count": 14,
+        "closed_requests_count": 7,
+        "average_processing_time_hours": 19.22,
+        "top_3_consultants": [
+            {
+                "consultant_name": "Kama Koko",
+                "closed_requests": 3
+            },
+            {
+                "consultant_name": "Tom Consul",
+                "closed_requests": 2
+            },
+            {
+                "consultant_name": "Kar Ka",
+                "closed_requests": 2
+            }
+        ]
+    },
+    "generated_at": "2026-01-21 18:39"
+}
