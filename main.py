@@ -98,7 +98,7 @@ report_data = {
             for name, count in top_3_consultants
         ],
     },
-    "generated_at": now.strftime('%Y-%m-%d %H:%m'),
+    "generated_at": now.strftime('%Y-%m-%d %H:%M'),
 }
 
 with open(REPORT_FILE, "w", encoding="utf-8") as f:
