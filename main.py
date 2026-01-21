@@ -45,7 +45,7 @@ for r in requests_table.all():
     fields = r["fields"]
 
     created_at = fields.get("created_at", "Unknown")
-    completed_at = fields.get("completed_at", "Unknown")
+    completed_at = fields.get("completed_at")
     status = fields.get("status", "Unknown")
 
     created_dt = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
@@ -58,6 +58,7 @@ for r in requests_table.all():
     if status == "Completed" and completed_at:
         closed_dt = datetime.fromisoformat(completed_at.replace("Z", "+00:00"))
 
+        # if week_ago <= created_dt <= now:
         if week_ago <= closed_dt <= now:
             closed_requests.append(r)
 
